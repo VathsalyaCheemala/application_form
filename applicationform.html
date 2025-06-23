@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Metro Card Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+        }
+        .form-container {
+            width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        h2 {
+            text-align: center;
+            color: #333333;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        input[type="file"] {
+            margin-top: 6px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #004c99;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Metro Card Application Form</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="5" max="100" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">-- Select --</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="email">Email ID:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone">Contact Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="address">Residential Address:</label>
+        <textarea id="address" name="address" rows="3" required></textarea>
+
+        <label for="idproof">Upload ID Proof (Aadhaar/Driving License etc):</label>
+        <input type="file" id="idproof" name="idproof" accept=".jpg,.jpeg,.png,.pdf" required>
+
+        <input type="submit" value="Apply Now">
+    </form>
+</div>
+
+</body>
+</html>
